@@ -1,9 +1,5 @@
-Pipeline:
-
-1) Preprocess image (grayscale + Otsu)
-2) OCR with Tesseract (English by default)
-3) Ask an LLM to return a clean JSON
-4) Parse output and save to 'receipt.json'
+# OCR_receipt
+Extracts text from receipt images and turn them into JSON. 
 
 ## Table of contents
 - [Features](#features)
@@ -29,9 +25,11 @@ OCR_receipt/
 │  ├─ receipt1.jpg
 │  └─ receipt2.jpg
 └─ src/
-   ├─ parse_receipt.py     
-   ├─ ocr.py               
-   └─ secrets.py           
+   ├─ parse_receipt.py
+   ├─ ocr.py
+   └─ secrets.py  
+
+     
 
 ## Prerequisites
 - Python **3.x**
@@ -39,7 +37,7 @@ OCR_receipt/
 - OpenCV
 - OpenAI Python client (API key)
 
-##Install & Run:
+## Install & Run:
 1) Clone the repository:
 'git clone <repository-url>
 cd <repository-directory>'
@@ -56,5 +54,5 @@ and LLM model of preference (gpt-4o-mini is used to keep costs low while structu
 3) The result is saved as receipt.json
 
 
-##License
+## License
 This project is licensed under the MIT License.
