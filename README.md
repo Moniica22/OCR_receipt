@@ -30,7 +30,7 @@ The script will:
 'git clone <repository-url>
 cd <repository-directory>'
 ```
-2)Install Python deps:
+2) Install Python deps:
 ```
 'pip install -r requirements.txt'
 ```
@@ -40,7 +40,7 @@ OPENAI_API_KEY = "sk-PASTE_YOUR_KEY_HERE"
 PYTESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 ```
 -----------------------------------------------------------------------------------------------------
-1) Add your testing receipt image in /samples and set it in parse_receipt.py:
+4) Add your testing receipt image in /samples and set it in parse_receipt.py:
 ```
 image_path = "samples/receipt1.jpg"
 ```
@@ -48,11 +48,11 @@ and LLM model of preference (gpt-4o-mini is used to keep costs low while structu
 ```
 'model="gpt-4o-mini"'
 ```
-3) Run from the project root:
+5) Run from the project root:
 ```
 python .\src\parse_receipt.py
 ```
-5) The result is saved as receipt.json
+6) The result is saved as receipt.json
 
 
 ## License
